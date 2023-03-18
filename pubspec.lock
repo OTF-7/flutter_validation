@@ -183,8 +183,8 @@ packages:
     dependency: "direct main"
     description:
       path: "packages/validation_localizations"
-      ref: HEAD
-      resolved-ref: f4684a5e5e17714e49df02138ba421517931f5a4
+      ref: "1.0.0"
+      resolved-ref: "0584564f0f5e62ff45d4e6e534988bdfcf2cd10b"
       url: "https://github.com/MoaidAlrazhy/flutter-localizations.git"
     source: git
     version: "1.0.0"

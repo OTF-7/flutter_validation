@@ -19,7 +19,6 @@ class MyApp extends StatelessWidget {
         const Locale('en'),
         const Locale('ar'),
         const Locale.fromSubtags(languageCode: 'zh', countryCode: 'CN', scriptCode: 'Hans'),
-
       ],
       theme: ThemeData(
         primarySwatch: Colors.blue,
@@ -73,8 +72,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   });
                 },
                 validator: MultiValidator([
-                  Validator.of(context)!
-                      .required(AttributeLocalizations.of(context)!.gender),
+                  Validator.of(context)!.required(AttributeLocalizations.of(context)!.gender),
                   Validator.of(context)!.contains(
                     AttributeLocalizations.of(context)!.gender,
                     _genders,
@@ -86,15 +84,13 @@ class _MyHomePageState extends State<MyHomePage> {
                   labelText: AttributeLocalizations.of(context)!.email,
                 ),
                 validator: MultiValidator([
-                  Validator.of(context)!
-                      .required(AttributeLocalizations.of(context)!.email),
+                  Validator.of(context)!.required(AttributeLocalizations.of(context)!.email),
                   Validator.of(context)!.email,
                 ]),
               ),
               TextFormField(
                 validator: MultiValidator([
-                  Validator.of(context)!
-                      .required(AttributeLocalizations.of(context)!.phone),
+                  Validator.of(context)!.required(AttributeLocalizations.of(context)!.phone),
                   Validator.of(context)!.phone,
                 ]),
                 decoration: InputDecoration(
@@ -111,8 +107,7 @@ class _MyHomePageState extends State<MyHomePage> {
           if (_formKey.currentState!.validate()) {
             _formKey.currentState!.save();
 
-            ScaffoldMessenger.of(context)
-                .showSnackBar(SnackBar(content: Text('Have fun (:')));
+            ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Have fun (:')));
           }
         },
         tooltip: 'Submit',
