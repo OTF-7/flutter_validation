@@ -15,10 +15,11 @@ class MyApp extends StatelessWidget {
         ...ValidationLocalizations.localizationsDelegates,
         AttributeLocalizations.delegate,
       ],
+      locale: const Locale('zh'),
       supportedLocales: [
         const Locale('en'),
         const Locale('ar'),
-        const Locale.fromSubtags(languageCode: 'zh', countryCode: 'CN', scriptCode: 'Hans'),
+        const Locale('zh'),
       ],
       theme: ThemeData(
         primarySwatch: Colors.blue,
