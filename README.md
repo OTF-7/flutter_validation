@@ -37,7 +37,9 @@ MaterialApp(
 	supportedLocales: [
 		const Locale('en'),
 		const Locale('ar'),
-		/// add other locales for now (en, ar)
+        const Locale.fromSubtags(languageCode: 'zh', countryCode: 'CN', scriptCode: 'Hans'),
+
+/// add other locales for now (en, ar)
 	],
 	// ...
 )
