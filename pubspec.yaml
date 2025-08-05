@@ -24,7 +24,6 @@ dependencies:
     git:
       url: https://github.com/OTF-7/flutter-localizations.git
       path: packages/validation_localizations
-      ref: 1.0.8
 
 dev_dependencies:
   flutter_test:
